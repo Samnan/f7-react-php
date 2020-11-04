@@ -1,4 +1,7 @@
-# F76
+# Framework7-React v6 split view template
+This is a clean split view template generated from f7 cli and migrated to version 6 (in alpha at the time of creation of this template).
+
+Special Thanks to Vladimir Kharlampidi (@nolimits4web) for converting the generated templated to v6.
 
 ## Framework7 CLI Options
 
