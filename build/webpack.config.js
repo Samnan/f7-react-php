@@ -50,6 +50,9 @@ module.exports = {
     watchOptions: {
       poll: 1000,
     },
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+    },
   },
   optimization: {
     minimizer: [new TerserPlugin({
@@ -72,9 +75,6 @@ module.exports = {
           resolvePath('node_modules/ssr-window'),
         ],
       },
-
-
-
       {
         test: /\.css$/,
         use: [
@@ -104,13 +104,12 @@ module.exports = {
       },
       {
         test: /\.less$/,
-        use: [
-          (env === 'development' ? 'style-loader' : {
+        use: [{
             loader: MiniCssExtractPlugin.loader,
             options: {
               publicPath: '../'
             }
-          }),
+          },
           'css-loader',
           'postcss-loader',
           'less-loader',

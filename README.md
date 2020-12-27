@@ -1,15 +1,37 @@
-# Framework7-React v6 split view template
-This is a clean split view template generated from f7 cli and migrated to version 6 (in alpha at the time of creation of this template).
+# Framework7 + React + PHP 🔥
+This is a clean split view template generated from framework7 cli, and includes a simple php api backend.
 
-Special Thanks to Vladimir Kharlampidi (@nolimits4web) for converting the generated templated to v6.
+## Frontend
+- Framework7 v6
+- React
+
+## Backend
+- PHP
+
+# How to use
+- clone the repo locally
+- change all occurences of 'MyProject' and 'myproject' in the folder to the actual name of your project
+
+```
+npm install
+cd public
+composer install
+```
+
+### Optional
+- copy `.env.template` in `public/` folder to `.env`. Add any configuration you need and it will be
+available in your php code.
+
+# 🎉🎉🎉 Special Thanks 🎉🎉🎉
+Goes to Vladimir Kharlampidi (@nolimits4web) :+1: for converting the generated templated to v6 on request.
 
 ## Framework7 CLI Options
 
-Framework7 app created with following options:
+Framework7 app was created with following options:
 
 ```
 {
-  "cwd": "/Volumes/www/f76",
+  "cwd": "",
   "type": [
     "web",
     "pwa"

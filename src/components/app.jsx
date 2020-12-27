@@ -29,14 +29,14 @@ const MainApp = () => {
   const [password, setPassword] = useState('');
 
   const f7params = {
-    name: 'F76', // App name
+    name: 'myproject', // App name
     theme: 'auto', // Automatic theme detection
     // App routes
     routes: routes,
     // Register service worker
-    serviceWorker: {
-      path: '/service-worker.js',
-    },
+    /*serviceWorker: {
+      path: 'http://localhost:8080/service-worker.js',
+    }*/
   };
 
   const alertLoginData = () => {

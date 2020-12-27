@@ -5,6 +5,7 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+package-lock.json
 
 # Runtime data
 pids
@@ -34,7 +35,10 @@ node_modules/
 .DS_Store
 Thumbs.db
 
-
+# php/website stuff to ignore
+public/vendor/
+public/php_errors.log
+_site/
 
 # Production build
 www/

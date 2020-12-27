@@ -1,7 +1,7 @@
 {
-  "name": "F76",
-  "short_name": "F76",
-  "description": "F76",
+  "name": "MyProject",
+  "short_name": "myproject",
+  "description": "",
   "lang": "en-US",
   "start_url": "/",
   "display": "standalone",

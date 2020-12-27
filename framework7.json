@@ -1,10 +1,10 @@
 {
-  "cwd": "/Volumes/www/f76",
+  "cwd": "",
   "type": [
     "web",
     "pwa"
   ],
-  "name": "F76",
+  "name": "MyProject",
   "framework": "react",
   "template": "split-view",
   "bundler": "webpack",

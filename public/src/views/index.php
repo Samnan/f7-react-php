@@ -1,3 +1,6 @@
+<?php
+  $baseURL = 'http://localhost:8080/';
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,13 +23,13 @@
   
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <link rel="apple-touch-icon" href="static/icons/apple-touch-icon.png">
-  <link rel="icon" href="static/icons/favicon.png">
-  <link rel="manifest" href="/manifest.json">
-  <!-- css -->
+  <link rel="apple-touch-icon" href="<?php echo $baseURL; ?>static/icons/apple-touch-icon.png">
+  <link rel="icon" href="<?php echo $baseURL; ?>static/icons/favicon.png">
+  <link rel="manifest" href="<?php echo $baseURL; ?>manifest.json">
+  <link href="<?php echo $baseURL; ?>css/app.css" rel="stylesheet"></script>
 </head>
 <body>
   <div id="app"></div>
-  <!-- js -->
+  <script src="<?php echo $baseURL; ?>js/app.js"></script>
 </body>
 </html>
