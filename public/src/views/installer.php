@@ -8,19 +8,6 @@
 	else {
 		clearstatcache(TRUE);
 	}
-	include(BASE_PATH . '/config/lang.php');  // we have to include language first for proper settings
-	if (isset($_REQUEST["lang"]) && array_key_exists($_REQUEST["lang"], $_LANGUAGES) && file_exists(BASE_PATH . '/lang/'.$_REQUEST["lang"].'.php')) {
-		define('LANGUAGE', $_REQUEST["lang"]);
-	}
-	else if (isset($_COOKIE["lang"]) && array_key_exists($_COOKIE["lang"], $_LANGUAGES) && file_exists(BASE_PATH . '/lang/'.$_COOKIE["lang"].'.php'))
-		define('LANGUAGE', $_COOKIE["lang"]);
-	else if (isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])) {
-		$_user_lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
-		if (array_key_exists($_user_lang, $_LANGUAGES) && file_exists(BASE_PATH . '/lang/'.$_user_lang.'.php'))
-			define('LANGUAGE', $_user_lang);
-		unset($_user_lang);
-	}
-	require_once(BASE_PATH . '/lib/functions.php');
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
