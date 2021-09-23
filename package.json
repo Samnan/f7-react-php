@@ -6,7 +6,7 @@
   "repository": "",
   "license": "GPLv3",
   "scripts": {
-    "start": "npm run dev",
+    "start": "npm run dev && php -S localhost:8000 -t public/ 2>/dev/null &",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --config ./build/webpack.config.js",
     "build-dev": "cross-env NODE_ENV=development node ./build/build.js",
     "build-prod": "cross-env NODE_ENV=production node ./build/build.js"

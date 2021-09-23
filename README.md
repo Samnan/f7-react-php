@@ -11,19 +11,35 @@ This is a clean split view template generated from framework7 cli, and includes 
 # How to use
 - clone the repo locally
 - change all occurences of 'MyProject' and 'myproject' in the folder to the actual name of your project
-
+- after that, simply:
 ```
+# install frontend dependencies
 npm install
 cd public
+# install backend dependencies
 composer install
 ```
 
 ### Optional
-- copy `.env.template` in `public/` folder to `.env`. Add any configuration you need and it will be
-available in your php code.
+- copy `.env.template` in `public/` folder to `.env`. Add any configuration you need and it will be available in your php code.
+
+### Fire up
+- Once everything is setup, just run
+`npm start`
+
+This will start php backend on `localhost:8000`. Access it however you like in your frontend code.
+
+Enjoy.
 
 # 🎉🎉🎉 Special Thanks 🎉🎉🎉
 Goes to Vladimir Kharlampidi (@nolimits4web) :+1: for converting the generated templated to v6 on request.
+
+# FAQ
+- How do I use a different php backend (e.g. Laravel) with this?
+  The `public` folder contains php backend code project. Replace it with your Laravel (or other) backend code and start using it.
+
+- Can I remove F7 or React from the frontend?
+  Yes you can, but that kills the purpose of using this template for your project.
 
 ## Framework7 CLI Options
 
