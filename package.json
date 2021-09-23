@@ -20,22 +20,22 @@
     "Samsung >= 5"
   ],
   "dependencies": {
-    "@rematch/core": "^2.0.0-next.9",
-    "framework7": "^6.0.0-beta.5",
-    "framework7-react": "^6.0.0-beta.5",
+    "@rematch/core": "^2.1.0",
+    "framework7": "^6.3.4",
+    "framework7-react": "^6.3.4",
     "prop-types": "^15.7.2",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.10",
+    "@babel/core": "^7.15.5",
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",
-    "@babel/plugin-transform-runtime": "^7.12.10",
-    "@babel/preset-env": "^7.12.11",
-    "@babel/preset-react": "^7.12.10",
-    "@babel/runtime": "^7.12.5",
+    "@babel/plugin-transform-runtime": "^7.15.0",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/runtime": "^7.15.4",
     "babel-loader": "^8.2.2",
-    "chalk": "^4.1.0",
+    "chalk": "^4.1.2",
     "copy-webpack-plugin": "^6.4.1",
     "cross-env": "^7.0.3",
     "css-loader": "^5.0.1",
